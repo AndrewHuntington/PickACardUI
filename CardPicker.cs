@@ -8,7 +8,16 @@ namespace PickACardUI
 {
     internal class CardPicker
     {
+        /// <summary>
+        /// An instance of the Random class.
+        /// </summary>
         static Random random = new Random();
+
+        /// <summary>
+        /// Picks a number of cards and returns them.
+        /// </summary>
+        /// <param name="numberOfCards">The number of cards to pick.</param>
+        /// <returns>An array of string that contain the card names.</returns>
         public static string[] PickSomeCards(int numberOfCards)
         {
             string[] pickedCards = new string[numberOfCards];
